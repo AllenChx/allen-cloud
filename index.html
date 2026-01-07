@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Cloud - Pterodactyl Panel & Bot WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            color: white; 
+            scroll-behavior: smooth;
+            background-image: linear-gradient(rgba(5, 8, 16, 0.85), rgba(5, 8, 16, 0.85)), url('https://files.cloudkuimages.guru/images/829141417ff3.jpeg');
+            background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+        .glass-card { 
+            background: rgba(15, 23, 42, 0.4); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255,255,255,0.05); 
+            transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            height: 100%; display: flex; flex-direction: column; 
+        }
+        .glass-card:hover { 
+            border-color: #3b82f6; transform: translateY(-12px); 
+            box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.4); 
+        }
+        .gradient-blue { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); }
+        .gradient-green { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        #scrollTop { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 50; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="py-6 px-4 max-w-7xl mx-auto flex justify-between items-center sticky top-0 z-50 backdrop-blur-md">
+        <div class="text-2xl font-extrabold tracking-tighter italic" data-aos="fade-right">ALLEN<span class="text-blue-500 text-gradient">CLOUD</span></div>
+        <nav class="hidden md:flex space-x-8 text-sm font-bold">
+            <a href="#harga-panel" class="hover:text-blue-400 transition">List Panel</a>
+            <a href="#harga-bot" class="hover:text-blue-400 transition">List Sewabot</a>
+            <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+        </nav>
+        <a href="https://wa.me/79019846051" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-xs font-bold transition text-white">Hubungi Admin</a>
+    </header>
+
+    <section class="py-20 px-4 text-center">
+        <div data-aos="zoom-in">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Solusi Cloud Terbaik <br><span class="text-gradient font-black">Allen Cloud Services</span></h1>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-10 text-sm md:text-base leading-relaxed">Panel Pterodactyl AMD EPYC dan Bot WhatsApp 24 Jam Non-Stop.</p>
+            
+            <div class="flex justify-center space-x-4 mb-10">
+                <a href="#harga-panel" class="bg-blue-600 px-8 py-3 rounded-full font-bold text-sm hover:scale-105 transition shadow-lg">Panel Ptero</a>
+                <a href="#harga-bot" class="border border-white/20 bg-white/5 px-8 py-3 rounded-full font-bold text-sm hover:bg-white/10 transition">Sewa Bot WA</a>
+            </div>
+
+            <div class="max-w-md mx-auto" data-aos="fade-up">
+                <a href="https://whatsapp.com/channel/0029Vb20oaCBFLgcvbsZEs39" target="_blank" class="flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center text-green-500"><i class="fab fa-whatsapp text-2xl"></i></div>
+                        <div class="text-left">
+                            <p class="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Join Our Channel</p>
+                            <p class="text-sm font-bold">Update & Info Terbaru</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 group-hover:text-white transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga-panel" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-2 uppercase tracking-widest">List Harga <span class="text-blue-500">Panel</span></h2>
+            <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2">RAM 2GB</h3>
+                <div class="text-3xl font-extrabold mb-6 italic">Rp 5.000<span class="text-xs font-normal text-gray-500"> /bln</span></div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-shield-virus text-blue-500 mr-2"></i> Anti DDOS</li>
+                    <li><i class="fas fa-lock text-blue-500 mr-2"></i> Script Aman & Privasi</li>
+                    <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Panel+2GB" class="block text-center w-full py-3 rounded-xl gradient-blue font-bold text-sm">Order Sekarang</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-2">RAM 3GB</h3>
+                <div class="text-3xl font-extrabold mb-6 italic">Rp 7.000<span class="text-xs font-normal text-gray-500"> /bln</span></div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-shield-virus text-blue-500 mr-2"></i> Anti DDOS</li>
+                    <li><i class="fas fa-lock text-blue-500 mr-2"></i> Script Aman & Privasi</li>
+                    <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Panel+3GB" class="block text-center w-full py-3 rounded-xl gradient-blue font-bold text-sm">Order Sekarang</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl relative border-blue-500/50" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute top-0 right-0 bg-blue-600 text-[10px] px-4 py-1 rounded-bl-xl font-bold uppercase">Terlaris</div>
+                <h3 class="text-xl font-bold mb-2 text-blue-400">RAM 4GB</h3>
+                <div class="text-3xl font-extrabold mb-6 italic">Rp 9.000<span class="text-xs font-normal text-gray-500"> /bln</span></div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-shield-virus text-blue-500 mr-2"></i> Anti DDOS</li>
+                    <li><i class="fas fa-lock text-blue-500 mr-2"></i> Script Aman & Privasi</li>
+                    <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Panel+4GB" class="block text-center w-full py-3 rounded-xl bg-blue-600 font-bold text-sm">Order Sekarang</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up">
+                <h3 class="text-xl font-bold mb-2">RAM 5GB</h3>
+                <div class="text-3xl font-extrabold mb-6 italic">Rp 11.000<span class="text-xs font-normal text-gray-500"> /bln</span></div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-shield-virus text-blue-500 mr-2"></i> Anti DDOS</li>
+                    <li><i class="fas fa-lock text-blue-500 mr-2"></i> Script Aman & Privasi</li>
+                    <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Panel+5GB" class="block text-center w-full py-3 rounded-xl gradient-blue font-bold text-sm">Order Sekarang</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-2">RAM 6GB</h3>
+                <div class="text-3xl font-extrabold mb-6 italic">Rp 12.000<span class="text-xs font-normal text-gray-500"> /bln</span></div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-shield-virus text-blue-500 mr-2"></i> Anti DDOS</li>
+                    <li><i class="fas fa-lock text-blue-500 mr-2"></i> Script Aman & Privasi</li>
+                    <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Panel+6GB" class="block text-center w-full py-3 rounded-xl gradient-blue font-bold text-sm">Order Sekarang</a>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border-purple-500/30" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-2 text-purple-400">UNLIMITED</h3>
+                <div class="text-3xl font-extrabold mb-6 italic">Rp 15.000<span class="text-xs font-normal text-gray-500"> /bln</span></div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-shield-virus text-purple-500 mr-2"></i> Anti DDOS</li>
+                    <li><i class="fas fa-lock text-purple-500 mr-2"></i> Script Aman & Privasi</li>
+                    <li><i class="fas fa-calendar-alt text-purple-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Panel+Unlimited" class="block text-center w-full py-3 rounded-xl bg-purple-600 font-bold text-sm text-white">Order Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga-bot" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-2 uppercase tracking-widest">Sewa <span class="text-green-500">Bot WhatsApp</span></h2>
+            <div class="h-1 w-20 bg-green-500 mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl" data-aos="zoom-in">
+                <h3 class="text-xl font-bold mb-2">1 Bulan</h3>
+                <div class="text-3xl font-extrabold mb-6 italic text-green-400">Rp 15.000</div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Bot On 24 Jam</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Memiliki banyak fitur</li>
+                    <li><i class="fas fa-calendar-check text-green-500 mr-2"></i> Aktif selama 30 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Bot+1+Bulan" class="block text-center w-full py-3 rounded-xl gradient-green font-bold text-sm">Sewa Sekarang</a>
+            </div>
+            <div class="glass-card p-8 rounded-3xl relative border-green-500/30" data-aos="zoom-in" data-aos-delay="100">
+                <div class="absolute top-0 right-0 bg-green-600 text-[10px] px-4 py-1 rounded-bl-xl font-bold">HEMAT</div>
+                <h3 class="text-xl font-bold mb-2 text-green-300">2 Bulan</h3>
+                <div class="text-3xl font-extrabold mb-6 italic text-green-400">Rp 25.000</div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Bot On 24 Jam</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Memiliki banyak fitur</li>
+                    <li><i class="fas fa-calendar-check text-green-500 mr-2"></i> Aktif selama 60 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Bot+2+Bulan" class="block text-center w-full py-3 rounded-xl gradient-green font-bold text-sm">Sewa Sekarang</a>
+            </div>
+            <div class="glass-card p-8 rounded-3xl" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-2">3 Bulan</h3>
+                <div class="text-3xl font-extrabold mb-6 italic text-green-400">Rp 35.000</div>
+                <ul class="space-y-3 mb-8 text-sm text-gray-300 flex-grow">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Bot On 24 Jam</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Memiliki banyak fitur</li>
+                    <li><i class="fas fa-calendar-check text-green-500 mr-2"></i> Aktif selama 90 Hari</li>
+                </ul>
+                <a href="https://wa.me/79019846051?text=Order+Bot+3+Bulan" class="block text-center w-full py-3 rounded-xl gradient-green font-bold text-sm">Sewa Sekarang</a>
+            </div>
+        </div>
+        <div class="mt-8 p-6 rounded-2xl bg-yellow-500/10 border border-yellow-500/20 max-w-2xl mx-auto text-xs text-gray-400 text-center" data-aos="fade-up">
+            <p class="font-bold text-yellow-500 mb-1 uppercase tracking-widest italic text-sm">NOTE PENTING</p>
+            <p>• Bot di kick masa aktif hangus | • Dilarang spam bot berlebihan | • Server dilarang untuk kegiatan ilegal</p>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 px-4 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-extrabold text-center mb-12" data-aos="fade-up">Pernyataan <span class="text-gradient">Umum</span></h2>
+        <div class="space-y-4">
+            <div class="glass-card rounded-2xl overflow-hidden" data-aos="fade-up">
+                <button class="w-full p-6 text-left flex justify-between items-center group" onclick="toggleFAQ(this)">
+                    <span class="font-bold text-sm">Metode pembayaran apa saja yang diterima?</span>
+                    <i class="fas fa-chevron-down text-blue-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all bg-black/40"><p class="p-6 text-gray-400 text-sm">Kami menerima QRIS (Dana, OVO, GoPay) dan Transfer Bank.</p></div>
+            </div>
+            <div class="glass-card rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <button class="w-full p-6 text-left flex justify-between items-center group" onclick="toggleFAQ(this)">
+                    <span class="font-bold text-sm">Berapa lama proses aktivasi layanan?</span>
+                    <i class="fas fa-chevron-down text-blue-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all bg-black/40"><p class="p-6 text-gray-400 text-sm">Layanan aktif dalam hitungan menit setelah konfirmasi bukti pembayaran.</p></div>
+            </div>
+            <div class="glass-card rounded-2xl overflow-hidden border-blue-500/30" data-aos="fade-up" data-aos-delay="200">
+                <button class="w-full p-6 text-left flex justify-between items-center group" onclick="toggleFAQ(this)">
+                    <span class="font-bold text-sm">Bagaimana cara perpanjang layanan?</span>
+                    <i class="fas fa-chevron-down text-blue-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all bg-black/40"><p class="p-6 text-gray-400 text-sm">Hubungi admin WhatsApp sebelum masa habis untuk perpanjangan instan tanpa kehilangan data.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-white/5">
+        <p class="text-gray-500 text-[10px] tracking-widest font-bold uppercase">&copy; 2026 ALLEN CLOUD. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <button id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-blue-500 w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg text-white">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        function toggleFAQ(btn) {
+            const content = btn.nextElementSibling; const icon = btn.querySelector('i');
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px'; icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px'; icon.style.transform = 'rotate(180deg)';
+            }
+        }
+        window.onscroll = function() { document.getElementById("scrollTop").style.display = (window.scrollY > 500) ? "flex" : "none"; };
+    </script>
+</body>
+</html>
